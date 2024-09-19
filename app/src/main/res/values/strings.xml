@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FitFusion App</string>
+    <string name="splash_image">splash image</string>
+    <string name="track_your_active_lifestyle">Track your Active Lifestyle</string>
+    <string name="find_your_way_to_the_perfect_body">Find your way to the perfect body</string>
+    <string name="login">Login</string>
+    <string name="email">     Email</string>
+    <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign in with Google</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fit_fusion">fit fusion</string>
+    <string name="saturday">Saturday</string>
+    <string name="_29_september">29 September</string>
+    <string name="walk">Walk</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_weight_in_kgs">Enter Weight in kgs</string>
+    <string name="enter_height_in_cm">Enter Height in cm</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="activities">Activities :</string>
+    <string name="_6500_steps">6500 Steps</string>
+    <string name="walk_image">walk image</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password_again">Enter Your Password Again</string>
+    <string name="cancel">Cancel</string>
+    <string name="result_here">Result here</string>
+    <string name="_300_kcal">300 kcal</string>
+    <string name="calories_burned">Calories Burned:</string>
+    <string name="distance_walked">Distance Walked:</string>
+    <string name="_8_0_km">8.0 km</string>
+    <string name="keep_going_you_re_doing_great">Keep Going! You\'re doing great!</string>
+    <string name="_10_000">10,000 Steps</string>
+</resources>

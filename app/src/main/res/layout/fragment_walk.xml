@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".walkScreen.WalkFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="@dimen/_120sdp"
+            android:src="@drawable/ic_walk"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/walk"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/progress_circular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <TextView
+            android:id="@+id/step_count"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/_10_000"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="@dimen/_27ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_circular"
+            app:layout_constraintEnd_toEndOf="@+id/progress_circular"
+            app:layout_constraintStart_toStartOf="@+id/progress_circular"
+            app:layout_constraintTop_toTopOf="@+id/progress_circular" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_64sdp"
+            app:cpb_background_progressbar_color="@color/light_gray"
+            app:cpb_background_progressbar_width="@dimen/_8sdp"
+            app:cpb_progress="55"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/fill_color"
+            app:cpb_progressbar_width="@dimen/_10sdp"
+            app:cpb_round_border="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_calories_burned_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/lato_fam"
+            android:text="@string/calories_burned"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/circularProgressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_circular"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <TextView
+            android:id="@+id/tv_calories_burned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_300_kcal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+
+            android:id="@+id/circularProgressBar"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            app:cpb_background_progressbar_color="@color/light_gray"
+            app:cpb_background_progressbar_width="@dimen/_8sdp"
+            app:cpb_progress="75"
+            app:cpb_progress_direction="to_left"
+            app:cpb_progressbar_color="@color/blue"
+            app:cpb_progressbar_width="@dimen/_9sdp"
+            app:cpb_round_border="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_calories_burned_label" />
+
+        <TextView
+            android:id="@+id/tv_distance_walked_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/lato_fam"
+            android:text="@string/distance_walked"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/circularProgressBar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_circular"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/tv_distance_walked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_8_0_km"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar2"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar2"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar2" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+
+            android:id="@+id/circularProgressBar2"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            app:cpb_background_progressbar_color="@color/light_gray"
+            app:cpb_background_progressbar_width="@dimen/_8sdp"
+            app:cpb_progress="35"
+            app:cpb_progress_direction="to_left"
+            app:cpb_progressbar_color="@color/blue"
+            app:cpb_progressbar_width="@dimen/_9sdp"
+            app:cpb_round_border="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_distance_walked_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

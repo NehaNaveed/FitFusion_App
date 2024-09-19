@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tile_color"
+    tools:context=".SignupFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/poppins_fam"
+        android:text="@string/fit_fusion"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_25sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="596dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_curve"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:fontFamily="@font/poppins_fam"
+                android:hint="@string/enter_your_email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_fam"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_fam"
+                android:hint="@string/enter_your_password_again"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up_button"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_174sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/poppins_fam"
+        android:layout_gravity="bottom"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_44sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/poppins_fam"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</FrameLayout>

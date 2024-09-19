@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tile_card"
+        android:layout_width="@dimen/_138sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_margin="@dimen/_3sdp"
+        android:backgroundTint="@color/tile_color"
+        app:cardCornerRadius="@dimen/_22sdp"
+        app:cardElevation="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/title_card"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_fam"
+            android:text="@string/walk"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/icon_card"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@string/walk_image"
+            android:src="@drawable/walking" />
+
+
+        <TextView
+            android:id="@+id/step_count"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_86sdp"
+            android:fontFamily="@font/poppins_fam"
+            android:text="@string/_6500_steps"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cpb_background_progressbar_color="@color/text_color"
+            app:cpb_background_progressbar_width="7dp"
+            app:cpb_progress="55"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/fill_color"
+            app:cpb_progressbar_width="9dp"
+            app:cpb_round_border="true" />
+
+        <include
+            android:id="@+id/barChart"
+            layout="@layout/view_bar_chart"
+            android:visibility="gone"
+            />
+        <include layout="@layout/view_image_view"
+            android:id="@+id/image_view"
+            android:visibility="gone"
+            />
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

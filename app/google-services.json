@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678164256556",
+    "project_id": "fit-fusion-app-2068e",
+    "storage_bucket": "fit-fusion-app-2068e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678164256556:android:e7605270ed5d9e33c93e89",
+        "android_client_info": {
+          "package_name": "com.example.fitfusionapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZFjayiI1Um19u3K5JSLbxss0HC5qtk6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
